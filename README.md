@@ -1,6 +1,6 @@
 # ts-deepcopy
 
-https://travis-ci.org/ykdr2017/ts-deepcopy.svg?branch=master
+[![Build Status](https://travis-ci.org/ykdr2017/ts-deepcopy.svg?branch=master)](https://travis-ci.org/ykdr2017/ts-deepcopy)
 
 ## ABOUT ts-deepcoy
 
