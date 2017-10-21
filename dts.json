@@ -1,0 +1,6 @@
+{
+    "name": "ts-deepcopy",
+    "main": "./types/src/ts/main.d.ts",
+    "out": "../../index.d.ts",
+    "headerPath": "./dts-header.txt"
+}

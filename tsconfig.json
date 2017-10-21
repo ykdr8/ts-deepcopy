@@ -1,0 +1,34 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "sourceMap": false,
+        "noImplicitAny": true,
+        "removeComments": false,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": false,
+        "declaration": true,
+        "declarationDir": "./types/",
+        "baseUrl": ".",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ],
+            "@test/*": [
+                "test/*"
+            ]
+        }
+    },
+    "filesGlob": [
+        "./src/ts/**/*.ts",
+        "./src/ts/**/*.tsx",
+        "./test/src/**/*.ts",
+        "./test/src/**/*.tsx"
+    ],
+    "files": [
+        "./src/ts/main.ts",
+        "./test/src/main.ts"
+    ]
+}
