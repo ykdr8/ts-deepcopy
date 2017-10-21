@@ -4,6 +4,10 @@
 	"author": "snow",
 	"license": "MIT",
 	"description": "A general purpose deep copy function for TypeScript.",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/ykdr2017/ts-deepcopy.git"
+	},
 	"main": "./dist/js/index.js",
 	"types": "./types/index.d.ts",
 	"config": {},
