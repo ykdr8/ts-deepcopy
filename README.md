@@ -9,13 +9,13 @@ The function includes a generic type of TypeScript, therefore the copied object 
 
 ## INSTALL
 
-```
+```Shell
 $ npm install ts-deepcopy
 ```
 
 ## USAGE
 
-```
+```TypeScript
 import deepcopy from "ts-deepcopy";
 
 interface I1 {
@@ -43,13 +43,13 @@ console.log(copied.b.ba);   // => "baba"
 
 ## DEVELOP
 
-```
+```Shell
 $ npm install
 $ npm run build:main
 ```
 
 ## TEST
 
-```
+```Shell
 $ npm run test
 ```
