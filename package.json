@@ -1,6 +1,6 @@
 {
 	"name": "ts-deepcopy",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "snow",
 	"license": "MIT",
 	"description": "A general purpose deep copy function for TypeScript.",
