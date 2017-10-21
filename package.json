@@ -1,6 +1,6 @@
 {
 	"name": "ts-deepcopy",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"author": "snow",
 	"license": "MIT",
 	"description": "A general purpose deep copy function for TypeScript.",
@@ -39,11 +39,11 @@
 		"webpack": "^2.2.0"
 	},
 	"files": [
-		"./dist",
-		"./types",
-		"./test/spec",
-		"./test/fixture",
-		"./README.md",
-		"./package.json"
+		"/dist",
+		"/types",
+		"/test/spec",
+		"/test/fixture",
+		"/README.md",
+		"/package.json"
 	]
 }
