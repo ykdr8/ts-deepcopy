@@ -15,7 +15,9 @@ module.exports = {
 	},
 	output: {
 		path: __dirname,
-		filename: './dist/js/index.js' //'./[id].[name].js'
+		filename: './dist/js/index.js', //'./[id].[name].js'
+		//library: "",
+		libraryTarget: "umd"
 	},
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js'],
@@ -25,7 +27,7 @@ module.exports = {
 		}
 	},
 	plugins: [
-	  new UglifyPlugin()
+		new UglifyPlugin()
 	],
 	module: {
 		rules: [{
