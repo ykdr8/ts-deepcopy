@@ -1,0 +1,22 @@
+{
+	"extends": ["tslint-config-airbnb"],
+	"rules": {
+		"indent": [true, "tabs"],
+		"ter-indent": [true, "tab"],
+		"max-line-length": [true, 120],
+		"object-shorthand-properties-first": false,
+		"radix": false,
+		"ter-arrow-parens": false,
+		"jsx-wrap-multiline": false,
+		"variable-name": false,
+		"function-name": false,
+		"no-var-self": false,
+		"whitespace": [
+			true, "check-type", "check-separator"
+		],
+		"prefer-const": false,
+		"import-name": false,
+		"no-increment-decrement": false,
+		"no-parameter-reassignment": false
+	}
+}
