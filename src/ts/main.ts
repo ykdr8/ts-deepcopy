@@ -24,21 +24,18 @@ namespace c {
 		} else if (Array.isArray(tgt)) {
 			cp = [] as any;
 			(tgt as any[]).forEach((v, i, arr) => { (cp as any).push(v); });
-			(cp as any).forEach((n: any) => {
-				if ((typeof(n) === 'object' && n !== {}) || Array.isArray(n)) {
-					n = c.execute<any>(n);
-				}
-			});
-		} else if (typeof(tgt) === 'object') {
+			cp = (cp as any).map((n: any) => c.execute<any>(n));
+		} else if ((typeof(tgt) === 'object') && (tgt !== {})) {
 			cp = { ...(tgt as Object) } as Tp;
 			Object.keys(cp).forEach(k => {
-				if (typeof((cp as any)[k]) === 'object') {
-					(cp as any)[k] = c.execute<any>((cp as any)[k]);
-				}
+				(cp as any)[k] = c.execute<any>((cp as any)[k]);
 			});
 		} else {
 			cp = tgt;
 		}
 		return cp;
+	}
+	export function isPrimitive() {
+
 	}
 }

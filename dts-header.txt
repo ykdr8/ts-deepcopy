@@ -1,4 +1,4 @@
-// Type definitions for ts-deepcopy 0.1.1
+// Type definitions for ts-deepcopy 0.1.2
 // Project: https://github.com/ykdr/ts-deepcopy
 // Definitions by: YKDR <https://github.com/ykdr/>
 // Definitions: ./types/index.d.ts
