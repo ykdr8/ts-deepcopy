@@ -15,6 +15,13 @@ function test(): void {
 				chai.assert.notStrictEqual(master.a, copy.a);
 			});
 		});
+		describe('Deepcopied object\'s child date changed', () => {
+			it('should be different from master\'s.', () => {
+				copy = TsDeepCopy<c.I1>(master);
+				master.j.setDate(master.j.getDate() + 1);
+				chai.assert.notStrictEqual(master.j.getDate(), copy.j.getDate());
+			});
+		});
 		describe('Deepcopied object\'s grandchild value changed', () => {
 			it('should be different from master\'s.', () => {
 				copy = TsDeepCopy<c.I1>(master);
@@ -71,6 +78,7 @@ namespace c {
 				b?: string;
 			};
 		};
+		j: Date;
 	}
 	export const obj: c.I1 = {
 		// Primitive value
@@ -99,6 +107,7 @@ namespace c {
 			h: () => { return 'i.h'; },
 			i: { a: 1 },
 		},
+		j: new Date(),
 	};
 }
 

@@ -21,6 +21,8 @@ namespace c {
 		let ptn: number = 0;
 		if (tgt === null) {
 			cp = tgt;
+		} else if (tgt instanceof Date) {
+			cp = new Date((tgt as any).getTime()) as any;
 		} else if (Array.isArray(tgt)) {
 			cp = [] as any;
 			(tgt as any[]).forEach((v, i, arr) => { (cp as any).push(v); });
