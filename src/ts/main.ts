@@ -37,7 +37,4 @@ namespace c {
 		}
 		return cp;
 	}
-	export function isPrimitive() {
-
-	}
 }
