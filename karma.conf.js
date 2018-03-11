@@ -29,10 +29,10 @@ module.exports = function(config) {
 		autoWatch: true,
 		browsers: [ "ChromeHeadless", "FirefoxHeadless" ],
 		customLaunchers: {
-		  FirefoxHeadless: {
-			base: "Firefox",
-			flags: [ "-headless" ],
-		  },
+			FirefoxHeadless: {
+				base: "Firefox",
+				flags: [ "-headless" ],
+			},
 		},
 		// https://www.npmjs.com/browse/keyword/karma-launcher
 		singleRun: false
